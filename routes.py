@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 
-from .database import SessionLocal
-from .models import Player, Session as GameSession
-from .schemas import SessionCreate
+from database import SessionLocal
+from models import Player, Session as GameSession
+from schemas import SessionCreate
 
 router = APIRouter()
 
